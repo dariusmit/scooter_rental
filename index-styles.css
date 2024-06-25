@@ -1,0 +1,1107 @@
+
+/*
+==================================
+CSS reset
+==================================
+*/
+
+* {
+    margin: 0px;
+    padding: 0px;
+    box-sizing: border-box;
+}
+
+/*
+==================================
+BODY styles
+==================================
+*/
+
+body {
+    font-family: "Lexend Deca", sans-serif;
+    color: #ffffff;
+}
+
+/*
+==================================
+HEADINGS
+==================================
+*/
+
+h1, h2, h3, h4 {
+    font-family: "Space Mono", monospace;
+    font-weight: 700;
+}
+
+/*
+==================================
+COLORS
+==================================
+*/
+
+.yellow {
+    color: #FCB72B;
+}
+
+.dark-navy {
+    color: #495567;
+}
+
+.dim-grey {
+    color: #939CAA;
+}
+
+.light-grey {
+    color: #E5ECF4;
+}
+
+.snow {
+    color: #F2F5F9;
+}
+
+.light-yellow {
+    color: #FFF4DF;
+}
+
+/*
+==================================
+MOBILE styles
+==================================
+*/
+
+/*MOBILE HERO section*/
+.hero-section-wrapper-div {
+    display: grid;
+    grid-template-rows: 17.07vw 173.33vw;
+    grid-auto-columns: 100%;
+    grid-template-areas: 
+    "header"
+    "hero-img";
+}
+
+.header-div {
+    grid-area: header;
+    display: grid;
+    grid-template-rows: 1fr;
+    grid-template-columns: 40vw 1fr;
+    grid-template-areas:
+    "hamburger logo";
+    align-items: center;
+}
+
+.hamburger-menu-div {
+    display: flex;
+    grid-area: hamburger;
+    margin-left: 8.53vw;
+}
+
+.hamburger-menu-icon {
+    align-self: center;
+    justify-self: center;
+    width: 5.25vw;
+    height: 4.27vw;
+}
+
+.logo-div {
+    grid-area: logo;
+    display: flex;
+    align-items: center;
+    width: 20.13vw;
+    height: 5.33vw;
+}
+
+.logo-img {
+    width: 100%;
+    height: 100%;
+}
+
+.navigation {
+    grid-area: nav;
+}
+
+.hidden-navigation {
+    display: none;
+}
+
+.call-to-action-div {
+    grid-area: btn;
+}
+
+.hidden-call-to-action {
+    display: none;
+}
+
+.call-to-action-button {
+    width: 48vw;
+    border: none;
+    background-color: #FCB72B;
+    color: white;
+    height: 14.43vw;
+    font-size: 4vw;
+    line-height: 6.67vw;
+    font-weight: 550;
+    letter-spacing: 2px;
+}
+
+.call-to-action-button:hover {
+    background-color: transparent;
+    border: 2px #FCB72B solid;
+    color: #FCB72B;
+}
+
+.hero-img-div {
+    grid-area: hero-img;
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+    background-image: url("../assets/images/home-hero-mobile.jpg");
+    background-size: cover;
+    background-position: center;
+    padding-left: 8.53vw;
+    padding-right: 8.53vw;
+    padding-top: 30.67vw;
+    padding-bottom: 47.73vw;
+}
+
+.hero-content-div {
+    width: 82.93vw;
+    height: 94.93vw;
+}
+
+.hero-img-header {
+    padding-bottom: 6.4vw;
+    font-size: 10.67vw;
+    line-height: 10.67vw;
+}
+
+.hero-img-p {
+    padding-bottom: 9.07vw;
+    font-weight: 350;
+    font-size: 4vw;
+    line-height: 6.67vw;
+}
+
+.images-div {
+    position: relative;
+    top: 0px;
+    left: -90.67vw;
+    width: 119.03vw;
+    height: 36.7vw;
+}
+
+.hidden-line {
+    display: none;
+}
+
+.hidden-circles {
+    display: none;
+}
+
+.arrow-img {
+    width: 100%;
+    height: auto;
+}
+
+/*MOBILE MAIN section-1*/
+
+.main-section-1-wrapper-div {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    padding-left: 8.53vw;
+    padding-right: 8.53vw;
+    padding-top: 32vw;
+    padding-bottom: 19.2vw;
+}
+
+.main-yellow-div {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    padding-bottom: 12.8vw;
+}
+
+.main-line-div {
+    display: none;
+}
+
+.main-yellow-icon-div {
+    width: 14.93vw;
+    height: 14.93vw;
+    margin-bottom: 6.4vw;
+}
+
+.main-yellow-icon-div img {
+    width: 100%;
+    height: 100%;
+}
+
+.main-content-div h3 {
+    color: #495567;
+    font-size: 5.33vw;
+    line-height: 4.47vw;
+    letter-spacing: -0.24vw;
+    padding-bottom: 6.4vw;
+}
+
+.main-content-div p {
+    color: #939CAA;
+    font-size: 4vw;
+    line-height: 6.67vw;
+}
+
+/*MOBILE MAIN section-2*/
+
+.main-section-2-wrapper-div {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    overflow: hidden;
+}
+
+.main-section-2-card {
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+    margin-bottom: 32vw;
+}
+
+.grey-circle {
+    display: none;
+}
+
+.main-section-2-arrow-img-1 {
+    width: 196vw;
+    height: 36.8vw;
+    position: absolute;
+    bottom: 0;
+    left: 0;
+}
+
+.main-section-2-arrow-img-2 {
+    width: 196vw;
+    height: 36.8vw;
+    position: absolute;
+    transform: scaleX(-1);
+    top: 0;
+    right: 21.6vw;
+}
+
+.main-section-2-arrow-img-3 {
+    width: 196vw;
+    height: 36.8vw;
+    position: absolute;
+    top: 0;
+    left: 34.67vw;
+}
+
+.main-section-2-hero-img-div {
+    width: 82.93vw;
+    height: 82.93vw;
+    margin-bottom: 14.93vw;
+    position: relative;
+}
+
+.main-section-2-hero-img {
+    width: 100%;
+    height: 100%;
+    border-radius: 50%;
+}
+
+.main-section-2-content-div {
+    width: 82.93vw;
+    height: 88.27vw;
+}
+
+.main-section-2-content-div h1 {
+    padding-bottom: 8.53vw;
+    font-size: 8.53vw;
+    line-height: 8.53vw;
+    letter-spacing: -0.38vw;
+    color: #495567;
+}
+
+.main-section-2-content-div p {
+    padding-bottom: 8.53vw;
+    font-size: 4vw;
+    line-height: 6.67vw;
+    color: #939CAA;
+}
+
+/*MOBILE FOOTER section*/
+
+.footer-section-wrapper-div {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.footer-section-1-div {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    height: 85.33vw;
+    background-color: #495567;
+    position: relative;
+    overflow: hidden;
+    padding-top: 23.47vw;
+    padding-bottom: 23.47vw;
+    padding-left: 8.53vw;
+    padding-right: 8.53vw;
+}
+
+.footer-section-1-div h1 {
+    color: white;
+    text-align: center;
+    font-size: 8.53vw;
+    line-height: 8.53vw;
+    letter-spacing: -0.38vw;
+    margin-bottom: 10.67vw;
+}
+
+.download {
+    display: flex;
+    width: 68.39vw;
+    height: 10.67vw;
+}
+
+.app-store {
+    width: 30.29vw;
+    margin-right: 3.43vw;
+    height: auto;
+}
+
+.play-store {
+    width: 34.67vw;
+    height: auto;
+}
+
+.footer-circles {
+    width: 307.47vw;
+    height: 46.27vw;
+    position: absolute;
+    bottom: 0;
+    right: -173px;
+}
+
+.footer-section-2-div {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    height: 116.8vw;
+    background-color: #333A44;
+    padding-top: 17.07vw;
+    padding-bottom: 23.47vw;
+    padding-left: 34.13vw;
+    padding-right: 34.13vw;
+}
+
+.footer-logo {
+    filter: brightness(0) saturate(100%) invert(100%) sepia(100%) saturate(2%) hue-rotate(316deg) brightness(105%) contrast(101%);
+    margin-bottom: 11.05vw;
+}
+
+.footer-links {
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+}
+
+.footer-links a {
+    color: #939CAA;
+    text-decoration: none;
+    margin-bottom: 4.27vw;
+    font-size: 4vw;
+    line-height: 6.67vw;
+}
+
+.footer-links a:hover {
+    color: #FCB72B;
+}
+
+.footer-social-icons {
+    margin-top: 18.4vw;
+    display: flex;
+}
+
+.footer-social-icons img {
+    margin-right: 6.4vw;
+}
+
+.footer-social-icons img:hover {
+    filter: brightness(0) saturate(100%) invert(100%) sepia(100%) saturate(2%) hue-rotate(316deg) brightness(105%) contrast(101%);
+}
+
+/*
+==================================
+TABLET styles
+==================================
+*/
+
+@media only screen and (min-width: 768px) {
+
+    /*TABLET HERO section*/
+
+    .hero-section-wrapper-div {
+        grid-template-rows: 12.5vw 84.64vw;
+    }
+
+    .header-div {
+        grid-template-rows: 1fr;
+        grid-template-columns: 22.9vw 42.33vw 34.77vw;
+        grid-template-areas:
+        "logo nav btn";
+    }
+
+    .hidden-navigation {
+        display: block;
+    }
+
+    .hidden-call-to-action {
+        display: block;
+    }
+
+    .hide-hamburger-menu  {
+        display: none;
+    }
+
+    .hidden-circles {
+        display: block;
+    }
+
+    .logo-div {
+        width: 14.04vw;
+        height: 3.72vw;
+        justify-self: center;
+        align-self: center;
+    }
+
+    .logo-img {
+        width: 100%;
+        height: 100%;
+    }
+
+    .navigation-div {
+        width: 32.42vw;
+        height: 3.26vw;
+        display: flex;
+        justify-self: center;
+        align-self: center;
+    }
+
+    .navigation {
+        font-size: 1.95vw;
+        line-height: 6.9vw;
+        width: 100%;
+        height: 100%;
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+    }
+
+    .navigation a {
+        text-decoration: none;
+        color:#939CAA;
+        font-weight: 500;
+    }
+
+    .navigation a:hover {
+        color: #FCB72B;
+    }
+
+    .call-to-action-div {
+        display: flex;
+        justify-self: center;
+        align-self: center;
+        width: 23.44vw;
+        height: 6.9vw;
+    }
+
+    .call-to-action-button {
+        width: 100%;
+        height: 100%;
+        font-size: 1.95vw;
+        line-height: 6.9vw;
+        letter-spacing: 2px;
+    }
+
+    .hero-img-div {
+        padding-top: 17.84vw;
+        padding-left: 12.63vw;
+        padding-right: 12.76vw;
+        padding-bottom: 0px;
+        background-image: url("../assets/images/home-hero-tablet.jpg");
+    }
+
+    .hero-content-div {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        flex-direction: column;
+        width: 74.6vw;
+        height: 38.54vw;
+    }
+
+    .hero-img-header {
+        padding-bottom: 0px;
+        margin-bottom: 3.13vw;
+        font-size: 7.29vw;
+        line-height: 7.29vw;
+        letter-spacing: -0.33vw;
+    }
+
+    .hero-img-p {
+        padding-bottom: 0px;
+        margin-bottom: 4.17vw;
+        font-size: 1.95vw;
+        padding-left: 2%;
+        padding-right: 2%;
+        line-height: 3.26vw;
+    }
+
+    .images-div {
+        position: relative;
+        top: 0px;
+        left: 0px;
+        width: auto;
+        height: auto;
+        margin-top: 5.2vw;
+    }
+
+    .arrow-img {
+        width: 58.2vw;
+        height: 17.97vw;
+        position: absolute;
+        top: 0;
+        left: -28.65vw;
+    }
+
+    .circles {
+        width: auto;
+        height: 8.2vw;
+        position: absolute;
+        top: 8.98vw;
+        right: -12.76vw;
+    }
+
+    /*TABLET MAIN section-1*/
+
+    .main-yellow-div {
+        flex-direction: row;
+        padding-bottom: 5.21vw;
+        align-items: flex-start;
+    }
+
+    .main-section-1-wrapper-div {
+        padding: 15.89vw 12.63vw 18.88vw 12.63vw;
+    }
+
+    .main-line-div {
+        display: block;
+        position: absolute;
+        z-index: -1;
+        left: 18.1vw;
+        top: 97.14vw;
+        width: 1.95vw;
+        height: 66.8vw;
+        background-color: #E5ECF4;
+    }
+
+    .main-yellow-icon-div {
+        width: 12.5vw;
+        height: 12.5vw;
+        margin-bottom: 0vw;
+        margin-right: 10.29vw;
+    }
+    
+    .main-content-div {
+        width: 51.82vw;
+        height: 16..93vw;
+        text-align: left;
+    }
+
+    .main-content-div h3 {
+        font-size: 3.13vw;
+        line-height: 3.65vw;
+        letter-spacing: -0.14vw;
+        padding-bottom: 3.52vw;
+    }
+    
+    .main-content-div p {
+        font-size: 1.95vw;
+        line-height: 3.26vw;
+    }
+
+    /*TABLET MAIN section-2*/
+
+    .main-section-2-card {
+        margin-bottom: 16.67vw;
+        align-items: center;
+    }
+
+    .main-section-2-hero-img-div {
+        width: 57.94vw;
+        height: 57.94vw;
+        margin-bottom: 7.29vw;
+    }
+
+    .grey-circle {
+        display: block;
+        width: 57.94vw;
+        height: 57.94vw;
+        position: absolute;
+        top: 0;
+    }
+
+    .grey-circle-right {
+        right: -66.41vw;
+    }
+
+    .grey-circle-left {
+        left: -66.41vw;
+    }
+
+    .main-section-2-arrow-img-1 {
+        width: 95.57vw;
+        height: auto;
+        bottom: -0.52vw;
+        left: -16.28vw;
+    }
+
+    .main-section-2-arrow-img-2 {
+        width: 95.57vw;
+        height: auto;
+        right: 32.55vw;
+    }
+
+    .main-section-2-arrow-img-3 {
+        width: 95.57vw;
+        height: auto;
+        top: 10.42vw;
+        left: 32.55vw;
+    }
+
+    .main-section-2-content-div {
+        width: 74.6vw;
+        height: 39.58vw;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .main-section-2-content-div h1 {
+        width: 59.51vw;
+        height: 12.5vw;
+        padding-bottom: 0px;
+        margin-bottom: 5.2vw;
+        font-size: 6.25vw;
+        line-height: 6.25vw;
+        letter-spacing: -0.28vw;
+    }
+
+    .main-section-2-content-div p {
+        padding-bottom: 5.2vw;
+        font-size: 1.95vw;
+        line-height: 3.26vw;
+    }
+
+    /*TABLET FOOTER section*/
+
+    .footer-section-1-div {
+        height: 39.06vw;
+        padding-top: 8.07vw;
+        padding-bottom: 8.07vw;
+        padding-left: 20.31vw;
+        padding-right: 20.31vw;
+    }
+    
+    .footer-section-1-div h1 {
+        font-size: 6.25vw;
+        line-height: 6.25vw;
+        letter-spacing: -0.28vw;
+        margin-bottom: 5.21vw;
+    }
+
+    .download {
+        width: 33.39vw;
+        justify-content: center;
+        height: 5.21vw;
+    }
+    
+    .app-store {
+        width: 14.79vw;
+        margin-right: 1.67vw;
+    }
+    
+    .play-store {
+        width: 16.93vw;
+    }
+
+    .footer-circles {
+        width: 150.13vw;
+        height: auto;
+        position: absolute;
+        bottom: 0;
+        right: -20.83vw;
+    }
+
+    .footer-section-2-div {
+        flex-direction: row;
+        width: 100%;
+        height: 12.5vw;
+        padding-top: 4.56vw;
+        padding-bottom: 4.17vw;
+        padding-left: 5.08vw;
+        padding-right: 5.08vw;
+    }
+    
+    .footer-logo {
+        margin-bottom: 0px;
+        margin-right: 7.63vw;
+    }
+    
+    .footer-links {
+        flex-direction: row;
+        margin-right: 19.92vw;
+    }
+    
+    .footer-links a {
+        margin-bottom: 0px;
+        margin-right: 4.17vw;
+        font-size: 1.95vw;
+        line-height: 3.26vw;
+    }
+    
+    .footer-social-icons {
+        margin-top: 0px;
+    }
+    
+    .footer-social-icons img {
+        margin-right: 3.13vw;
+    }
+
+}
+
+/*
+==================================
+DESKTOP styles
+==================================
+*/
+
+@media only screen and (min-width: 1440px) {
+
+    /*DESKTOP HERO section*/
+
+    .hero-section-wrapper-div {
+        grid-template-rows: 6.67vw 45.14vw;
+    }
+
+    .header-div {
+        grid-template-columns: 11.53vw 52.78vw 12.5vw;
+        margin-left: 11.74vw;
+        margin-right: 11.46vw;
+    }
+
+    .logo-div {
+        width: 7.49vw;
+        height: 1.98vw;
+        margin-right: 4.04vw;
+    }
+
+    .navigation-div {
+        width: 17.29vw;
+        height: 1.74vw;
+        justify-self: start;
+    }
+
+    .navigation {
+        font-size: 1.04vw;
+        line-height: 0.02vw;
+    }
+
+    .call-to-action-div {
+        width: 12.5vw;
+        height: 3.68vw;
+        margin-left: -9.03vw;
+    }
+
+    .call-to-action-button {
+        font-size: 1.04vw;
+        line-height: 0.02vw;
+        letter-spacing: 2px;
+    }
+
+    .hero-img-div {
+        padding-top: 10.63vw;
+        padding-left: 11.46vw;
+        padding-right: 0px;
+        padding-bottom: 0px;
+        background-image: url("../assets/images/home-hero-desktop.jpg");
+    }
+
+    .hero-content-div {
+        width: 34.72vw;
+        height: 23.96vw;
+    }
+
+    .hero-img-header {
+        margin-bottom: 2.78vw;
+        font-size: 3.89vw;
+        text-align: left;
+        line-height: 3.89vw;
+        letter-spacing: -0.17vw;
+    }
+
+    .hero-img-p {
+        max-width: 28.13vw;
+        margin-bottom: 2.78vw;
+        font-size: 1.04vw;
+        text-align: left;
+        align-self: end;
+        padding-left: 0px;
+        padding-right: 0px;
+        line-height: 1.74vw;
+    }
+
+    .images-div {
+        position: relative;
+        top: 0px;
+        left: 0px;
+        width: auto;
+        height: auto;
+        margin-top: 5.2vw;
+    }
+
+    .hidden-line {
+        display: block;
+    }
+
+    .line {
+        width: 14.1vw;
+        height: auto;
+        position: absolute;
+        top: -15.63vw;
+        left: -11.53vw;
+    }
+
+    .arrow-img {
+        width: 31.04vw;
+        height: 9.58vw;
+        top: -15.63vw;
+        left: 37.5vw;
+    }
+
+    .circles {
+        width: 14.1vw;
+        height: auto;
+        top: -10.9vw;
+        right: 0px;
+    }
+
+    /*DESKTOP MAIN section-1*/
+
+    .main-section-1-wrapper-div {
+        padding: 11.11vw 11.46vw 13.89vw 11.46vw;
+        flex-direction: row;
+    }
+
+    .main-yellow-div {
+        flex-direction: column;
+        padding-bottom: 0px;
+    }
+
+    .main-line-div {
+        z-index: -1;
+        left: 0px;
+        top: 65.69vw;
+        width: 67.64vw;
+        height: 1.04vw;
+    }
+
+    .main-yellow-icon-div {
+        width: 6.67vw;
+        height: 6.67vw;
+        margin-bottom: 2.78vw;
+        margin-right: 0px;
+    }
+    
+    .main-content-div {
+        width: 24.3vw;
+        height: 11.46vw;
+        margin-right: 2.08vw;
+    }
+
+    .main-content-div h3 {
+        font-size: 1.67vw;
+        line-height: 1.94vw;
+        letter-spacing: -0.07vw;
+        padding-bottom: 1.88vw;
+    }
+    
+    .main-content-div p {
+        font-size: 1.04vw;
+        line-height: 1.74vw;
+    }
+
+    /*DESKTOP MAIN section-2*/
+
+    .main-section-2-card {
+        flex-direction: row;
+        text-align: left;
+        margin-bottom: 11.11vw;
+        width: 79.5vw;
+        justify-content: space-between;
+    }
+
+    .reverse-card {
+        flex-direction: row-reverse;
+    }
+
+    .desktop {
+        margin-left: -18.75vw;
+    }
+
+    .main-section-2-hero-img-div {
+        width: 30.9vw;
+        height: 30.9vw;
+        margin-bottom: 0px;
+    }
+
+    .grey-circle {
+        width: 30.9vw;
+        height: 30.9vw;
+        top: 0;
+    }
+
+    .grey-circle-right {
+        right: -34.72vw;
+    }
+
+    .grey-circle-left {
+        left: -34.72vw;
+    }
+
+    .main-section-2-arrow-img-1 {
+        width: 51.04vw;
+        bottom: -0.28vw;
+        left: -8.33vw;
+    }
+
+    .main-section-2-arrow-img-2 {
+        width: 51.04vw;
+        left: -37.78vw;
+    }
+
+    .main-section-2-arrow-img-3 {
+        width: 51.04vw;
+        top: 5.56vw;
+        left: 17.36vw;
+    }
+    .main-section-2-content-div {
+        width: 30.9vw;
+        height: 21.74vw;
+    }
+
+    .main-section-2-content-div h1 {
+        width: 30.9vw;
+        height: 6.67vw;
+        margin-bottom: 1.67vw;
+        font-size: 3.33vw;
+        line-height: 3.33vw;
+        letter-spacing: -0.15vw;
+    }
+
+    .main-section-2-content-div p {
+        padding-bottom: 2.78vw;
+        font-size: 1.04vw;
+        line-height: 1.74vw;
+    }
+
+    /*DESKTOP FOOTER section*/
+
+
+
+
+
+
+
+    
+    /*Change these for desktop*/
+
+    .footer-section-1-div {
+        flex-direction: row;
+        justify-content: space-between;
+        height: 20.83vw;
+        padding-top: 7.08vw;
+        padding-bottom: 7.08vw;
+        padding-left: 11.46vw;
+        padding-right: 11.46vw;
+    }
+    
+    .footer-section-1-div h1 {
+        text-align: left;
+        width: 28.82vw;
+        height: auto;
+        font-size: 3.33vw;
+        line-height: 3.33vw;
+        letter-spacing: -0.15vw;
+        margin-bottom: 0px;
+    }
+
+    .download {
+        width: 24.93vw;
+        height: 3.89vw;
+    }
+    
+    .app-store {
+        width: 11.04vw;
+        margin-right: 1.25vw;
+    }
+    
+    .play-store {
+        width: 12.64vw;
+    }
+
+    .footer-circles {
+        width: 80.07vw;
+        right: -11.8vw;
+    }
+
+    .footer-section-2-div {
+        flex-direction: row;
+        width: 100%;
+        height: 12.5vw;
+        padding-top: 4.56vw;
+        padding-bottom: 4.17vw;
+        padding-left: 5.08vw;
+        padding-right: 5.08vw;
+    }
+    
+    .footer-logo {
+        margin-right: 4.07vw;
+    }
+
+    .footer-links {
+        margin-right: 39.58vw;
+    }
+
+    .footer-links a {
+        margin-right: 2.22vw;
+        font-size: 1.04vw;
+        line-height: 1.74vw;
+    }
+    
+    .footer-social-icons img {
+        margin-right: 1.67vw;
+    }
+
+}
